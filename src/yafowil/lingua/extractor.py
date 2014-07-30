@@ -41,7 +41,7 @@ class YafowilYamlExtractor(object):
                 )
             else:
                 message = Message(
-                    None, parts[1], None, [], parts[2], u'',
+                    None, parts[1], None, [], u'Default: ' + parts[2], u'',
                     (self.filename, lineno),
                 )
             self.messages.append(message)
