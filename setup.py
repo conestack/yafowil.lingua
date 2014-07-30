@@ -40,5 +40,8 @@ setup(name='yafowil.lingua',
           'lingua',
       ],
       test_suite="yafowil.lingua.tests.test_suite",
-      extras_require = dict()
+      entry_points="""
+      [console_scripts]
+      xpot-create = yafowil.lingua.extract:main
+      """
       )
