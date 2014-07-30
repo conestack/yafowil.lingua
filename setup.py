@@ -40,6 +40,5 @@ setup(name='yafowil.lingua',
           'lingua',
       ],
       test_suite="yafowil.lingua.tests.test_suite",
-      extras_require = dict(
-          test=tests_require,
-      ))
+      extras_require = dict()
+      )
