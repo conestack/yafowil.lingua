@@ -2,12 +2,13 @@ import sys
 import yaml
 from yaml.composer import Composer
 from lingua.extractors import (
-    register_extractor,
+    Extractor,
     Message,
 )
 
 
-class YafowilYamlExtractor(object):
+class YafowilYamlExtractor(Extractor):
+    extensions = ['.yaml', '.yml']
 
     def __call__(self, filename, options):
         self.filename = filename
@@ -45,9 +46,3 @@ class YafowilYamlExtractor(object):
                     (self.filename, lineno),
                 )
             self.messages.append(message)
-
-
-@register_extractor('yafowil_yaml', ['.yaml', '.yml'])
-def extract_yafowil_yaml(filename, options):
-    extractor = YafowilYamlExtractor()
-    return extractor(filename, options)

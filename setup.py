@@ -35,13 +35,12 @@ setup(name='yafowil.lingua',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'setuptools',
           'PyYAML',
           'lingua',
       ],
       test_suite="yafowil.lingua.tests.test_suite",
       entry_points="""
-      [console_scripts]
-      xpot-create = yafowil.lingua.extract:main
+      [lingua.extractors]
+      yafowil_yaml = yafowil.lingua.extractor:YafowilYamlExtractor
       """
       )

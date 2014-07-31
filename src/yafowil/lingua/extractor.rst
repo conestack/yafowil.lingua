@@ -30,8 +30,9 @@ Create tmp env::
 
 Test extractor::
 
-    >>> from yafowil.lingua.extractor import extract_yafowil_yaml
-    >>> extract_yafowil_yaml(template_path, None)
+    >>> from yafowil.lingua.extractor import YafowilYamlExtractor
+    >>> extractor = YafowilYamlExtractor()
+    >>> extractor(template_path, None)
     [Message(msgctxt=None, msgid=u'First Field', msgid_plural=None, flags=[], 
     comment=u'', tcomment=u'', 
     location=('...tmpl.yaml', 10)), 
