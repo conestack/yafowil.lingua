@@ -5,7 +5,7 @@ from setuptools import (
 )
 
 
-version = '0.1.dev0'
+version = '0.1'
 shortdesc = \
 'YAFOWIL - Lingua message extrator for yafowil.yaml based forms.'
 longdesc = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
@@ -36,7 +36,7 @@ setup(name='yafowil.lingua',
       zip_safe=False,
       install_requires=[
           'PyYAML',
-          'lingua',
+          'lingua>=2.5',
       ],
       test_suite="yafowil.lingua.tests.test_suite",
       entry_points="""
