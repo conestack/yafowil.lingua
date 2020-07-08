@@ -1,10 +1,8 @@
+from lingua.extractors import Extractor
+from lingua.extractors import Message
+from yaml.composer import Composer
 import sys
 import yaml
-from yaml.composer import Composer
-from lingua.extractors import (
-    Extractor,
-    Message,
-)
 
 
 class YafowilYamlExtractor(Extractor):
@@ -17,7 +15,9 @@ class YafowilYamlExtractor(Extractor):
         return self.messages
 
     def walk(self, filename):
-        loader = yaml.Loader(open(filename).read())
+        with open(filename) as file:
+            loader = yaml.Loader(file.read())
+
         def compose_node(parent, index):
             node = Composer.compose_node(loader, parent, index)
             self.parse_message(node, loader.line)
@@ -27,7 +27,7 @@ class YafowilYamlExtractor(Extractor):
 
     def parse_message(self, node, lineno):
         value = node.value
-        if not isinstance(value, basestring):
+        if not isinstance(value, str):
             return
         if value.startswith('i18n:'):
             parts = value.split(":")
