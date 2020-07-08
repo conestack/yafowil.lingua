@@ -1,7 +1,7 @@
 Changes
 =======
 
-0.2 (unreleased)
+1.0 (2020-07-08)
 ----------------
 
 - Python 3 support.
