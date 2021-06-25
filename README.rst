@@ -22,7 +22,7 @@ Source Code
 ===========
 
 The sources are in a GIT DVCS with its main branches at 
-`github <http://github.com/bluedynamics/yafowil.lingua>`_.
+`github <http://github.com/conestack/yafowil.lingua>`_.
 
 
 Contributors
