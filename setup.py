@@ -10,7 +10,7 @@ def read_file(name):
         return f.read()
 
 
-version = '1.0'
+version = '1.0.1.dev0'
 shortdesc = 'YAFOWIL - Lingua message extrator for yafowil.yaml based forms.'
 longdesc = '\n\n'.join([read_file(name) for name in [
     'README.rst',
@@ -42,6 +42,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
+        'setuptools',
         'PyYAML',
         'lingua>=2.5',
     ],

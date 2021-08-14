@@ -1,6 +1,13 @@
 Changes
 =======
 
+1.0.1 (unreleased)
+------------------
+
+- Add missing ``setuptools`` to install requirements.
+  [rnix]
+
+
 1.0 (2020-07-08)
 ----------------
 
