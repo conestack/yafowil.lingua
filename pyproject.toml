@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "yafowil.lingua"
@@ -24,15 +24,6 @@ dependencies = [
 
 [project.entry-points."lingua.extractors"]
 yafowil_yaml = "yafowil.lingua.extractor:YafowilYamlExtractor"
-
-[tool.setuptools.packages.find]
-where = ["src"]
-
-[tool.setuptools]
-zip-safe = false
-
-[tool.setuptools.package-dir]
-"" = "src"
 
 [tool.zest-releaser]
 create-wheel = true
