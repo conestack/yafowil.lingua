@@ -10,7 +10,7 @@ def read_file(name):
         return f.read()
 
 
-version = '1.0.1.dev0'
+version = '1.0.1'
 shortdesc = 'YAFOWIL - Lingua message extrator for yafowil.yaml based forms.'
 longdesc = '\n\n'.join([read_file(name) for name in [
     'README.rst',
