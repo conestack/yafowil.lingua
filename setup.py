@@ -45,6 +45,7 @@ setup(
         'setuptools',
         'PyYAML',
         'lingua>=2.5',
+        'yafowil<4.0.0'
     ],
     test_suite="yafowil.lingua.tests",
     entry_points="""

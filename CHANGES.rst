@@ -4,6 +4,9 @@ Changes
 1.0.1 (unreleased)
 ------------------
 
+- Pin upper versions of dependencies.
+  [rnix]
+
 - Add missing ``setuptools`` to install requirements.
   [rnix]
 
