@@ -1,7 +1,7 @@
 Changes
 =======
 
-1.0.1 (unreleased)
+2.0.0 (unreleased)
 ------------------
 
 - Add missing ``setuptools`` to install requirements.
