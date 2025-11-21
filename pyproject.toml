@@ -28,6 +28,11 @@ dependencies = [
     "lingua>=2.5",
 ]
 
+[project.optional-dependencies]
+test = [
+    "pytest",
+]
+
 [project.entry-points."lingua.extractors"]
 yafowil_yaml = "yafowil.lingua.extractor:YafowilYamlExtractor"
 
