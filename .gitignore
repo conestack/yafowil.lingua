@@ -6,4 +6,5 @@
 /.mxmake/
 /constraints-mxdev.txt
 /requirements-mxdev.txt
+/venv/
 /sources/
