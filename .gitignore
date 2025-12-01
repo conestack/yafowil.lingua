@@ -1,3 +1,10 @@
 *.pyc
 /dist/
 /src/yafowil.lingua.egg-info/
+/build
+/.coverage
+/.mxmake/
+/constraints-mxdev.txt
+/requirements-mxdev.txt
+/venv/
+/sources/
