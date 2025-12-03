@@ -26,6 +26,7 @@ classifiers = [
 dependencies = [
     "PyYAML",
     "lingua>=2.5",
+    "yafowil>3.99",
 ]
 
 [project.optional-dependencies]
