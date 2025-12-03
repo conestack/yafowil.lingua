@@ -4,7 +4,16 @@ Changes
 2.0.0 (unreleased)
 ------------------
 
-- Add missing ``setuptools`` to install requirements.
+- No changes yet.
+
+
+1.0.1 (2025-10-28)
+------------------
+
+- Pin upper versions of dependencies.
+  [rnix]
+
+- Add missing setuptools to install requirements.
   [rnix]
 
 
