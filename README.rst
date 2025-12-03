@@ -1,3 +1,11 @@
+.. image:: https://img.shields.io/pypi/v/yafowil.lingua.svg
+    :target: https://pypi.python.org/pypi/yafowil.lingua
+    :alt: Latest PyPI version
+
+.. image:: https://img.shields.io/pypi/dm/yafowil.lingua.svg
+    :target: https://pypi.python.org/pypi/yafowil.lingua
+    :alt: Number of PyPI downloads
+
 Documentation
 =============
 
